@@ -1,4 +1,10 @@
+#!/usr/bin/env bash
 # How to write a dotfiles repository : ttps://dotfiles.github.io/tutorials/
-ln -sv "~/.dotfiles/runcom/.bash_profile" ~
-ln -sv "~/.dotfiles/runcom/.inputrc" ~
-ln -sv "~/.dotfiles/git/.gitconfig" ~
+
+# golang default config: ~/.config/go/env
+# ln -sv "~/.dotfiles/system/env" ~/.config/go/
+cat ~/.dotfiles/system/golangenv >> ~/.config/go/env
+
+# nodejs default config: ~/.npmrc
+# ln -sv "~/.dotfiles/system/.npmrc" ~/
+cat ~/.dotfiles/system/.npmrc >> ~/.npmrc
