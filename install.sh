@@ -8,3 +8,6 @@ cat ~/.dotfiles/system/golangenv >> ~/.config/go/env
 # nodejs default config: ~/.npmrc
 # ln -sv "~/.dotfiles/system/.npmrc" ~/
 cat ~/.dotfiles/system/.npmrc >> ~/.npmrc
+
+# gitattributes TODO
+
